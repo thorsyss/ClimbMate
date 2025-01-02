@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimbMate Planning</title>
+  <link rel="stylesheet" href="css/planning.css">
+</head>
+<body>
+  <h1>Planificateur de Sorties d'Escalade</h1>
+
+  <!-- Formulaire d'ajout de membre -->
+  <section id="members-section">
+    <h2>Ajouter des Membres</h2>
+    <form id="members-form">
+      <input type="text" id="member-name" placeholder="Nom du membre" required>
+      <button type="submit">Ajouter</button>
+    </form>
+    <ul id="members-list"></ul>
+  </section>
+
+  <!-- Formulaire d'ajout de groupe -->
+  <section id="groups-section">
+    <h2>Créer un Groupe</h2>
+    <form id="groups-form">
+      <input type="text" id="group-name" placeholder="Nom du groupe" required>
+      <button type="submit">Créer</button>
+    </form>
+    <ul id="groups-list"></ul>
+  </section>
+
+  <!-- Formulaire de sortie -->
+  <section id="planning-section">
+    <h2>Planifier une Sortie</h2>
+    <form id="planning-form">
+      <input type="text" id="location" placeholder="Lieu" required>
+      <input type="date" id="date" required>
+      <select id="group-select">
+        <option value="">Choisir un groupe</option>
+      </select>
+      <button type="submit">Planifier</button>
+    </form>
+    <div id="trips-container"></div>
+  </section>
+
+  <script src="js/planning.js"></script>
+</body>
+</html>
